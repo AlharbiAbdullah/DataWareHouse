@@ -1,0 +1,16 @@
+# Environment files
+.env
+
+# PostgreSQL data directory
+/data
+
+# IDE-specific files
+.idea/
+.vscode/
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
