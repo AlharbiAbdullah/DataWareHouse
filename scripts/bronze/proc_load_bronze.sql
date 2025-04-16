@@ -1,19 +1,16 @@
 /*
 ===============================================================================
-Stored Procedure: Load Bronze Layer (Source -> Bronze)
+Script that Load Bronze Layer (Source -> Bronze)
 ===============================================================================
 Script Purpose:
-    This stored procedure loads data into the 'bronze' schema from external CSV files. 
+    This scrpit loads data into the 'bronze' schema from external CSV files. 
     It performs the following actions:
     - Truncates the bronze tables before loading data.
     - Uses the `BULK INSERT` command to load data from csv Files to bronze tables.
-
-Parameters:
-    None. 
-	  This stored procedure does not accept any parameters or return any values.
-
-Usage Example:
-    EXEC bronze.load_bronze;
+Note: 
+	This should've been a stored procedure, but since im running sql srver on 
+	Docker, there are some limitation and bugs. 
+	So in a real world scenario this has to be stored proced.
 ===============================================================================
 */
 
